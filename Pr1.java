@@ -16,7 +16,7 @@ public class SelectionSort {
                 }
             }
 
-            // Swap
+        
             temp = arr[i];
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
@@ -32,7 +32,6 @@ public class SelectionSort {
 
         int arr[] = new int[n];
 
-        // Generate random numbers using Math.random()
         for (int i = 0; i < n; i++) {
             arr[i] = (int)(Math.random() * 1000);
         }
@@ -42,12 +41,12 @@ public class SelectionSort {
             System.out.print(arr[i] + " ");
         }
 
-        // Start time
+        
         long startTime = System.nanoTime();
 
         selectionSort(arr, n);
 
-        // End time
+
         long endTime = System.nanoTime();
 
         System.out.println("\n\nArray after sorting:");
@@ -59,6 +58,6 @@ public class SelectionSort {
 
         System.out.println("\n\nExecution Time: " + executionTime + " nanoseconds");
 
-        sc.close();
+        
     }
               }
